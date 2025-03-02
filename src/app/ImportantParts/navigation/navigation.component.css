@@ -32,6 +32,27 @@
 }
 
 .title {
+    cursor: pointer;
     font-size: 30px;
     color: white;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 30px;
+
+}
+
+.buttons li {
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s all ease;
+}
+
+.buttons li:hover {
+    color: gold;
 }
