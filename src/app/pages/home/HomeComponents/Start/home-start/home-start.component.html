@@ -1,0 +1,35 @@
+<section class="home-start">
+    <div class="pre-content">
+        <div class="content">
+            <div class="title">
+                <p class="content-title">Hello, I'm</p>
+                <p class="content-title">Nikoloz Natenadze</p>
+            </div>
+            <div class="content-des">
+                <span class="content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusamus ipsam suscipit fugit dolor quasi? Quaerat illum, non quis tempore officia recusandae nisi itaque architecto consequuntur quo dolorum molestiae, eveniet labore nemo reiciendis. Qui doloremque dolorum similique eveniet dignissimos eligendi quo expedita iusto. Eaque, nihil autem pariatur esse exercitationem illo.</span>
+                <button class="action-button">More info</button>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="stats-content">
+                <div class="statistic">
+                    <p class="stat">{{years}}+</p>
+                    <p class="stat-title" (click)="logData()">Experiance</p>
+                </div>
+                <div class="statistic">
+                    <p class="stat">{{data.public_repos}}</p>
+                    <p class="stat-title">Projects</p>
+                </div>
+                <div class="statistic">
+                    <p class="stat">{{data.followers}}</p>
+                    <p class="stat-title">Followers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="image">
+        <div class="image-card" style="background-image: url({{data.avatar_url}});">
+            
+        </div>
+    </div>
+</section>
