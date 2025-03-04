@@ -1,138 +1,145 @@
 .home-start {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    padding-top: 76px;
-    padding-left: 40px;
-    padding-right: 40px;
     height: 90vh;
-}
-
-.pre-content {
-    margin-right: 40px;
-    gap: 30px;
-    flex-direction: column;
-    display: flex;
-    align-items:end;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-}
-
-.image {
-    margin-left: 40px;
     display: flex;
     align-items: center;
-    width: 50%;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.con {
+    width: 600px;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
     width: 70%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
+    height: 80%;
 }
 
-.title {
-    font-family: "Merriweather Sans", sans-serif;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 2.5vw;
-}
-
-.content-description {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-wrap: wrap;
-}
-
-.content-des {
-    gap: 10px;
-    margin-top: 20px;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
+.info {
     width: 100%;
+}
+
+.card {
+    overflow: hidden;
+    width: 430px;
     height: 100%;
-
-}
-
-.action-button {
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    background-color: #a23eff;
-    width: 130px;
-    height: 40px;
-    transition: 0.3s all ease;
-}
-
-.action-button:hover {
-    background-color: #a74dfce8;
-    backdrop-filter: blur(20px);
-}
-
-.stats {
-    width: 70%;
-    height: 105px;
-    gap: 10;
-}
-
-.stats-content {
-    overflow: hidden !important;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    border-radius: 10px;
-    gap: 2px;
-    align-items: center;
-    justify-content: center;
-}
-
-.statistic {
-    gap: 5px;
-    width: 33.3%;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    flex-direction: column;
-    background-color: #f6eafe;
-}
-
-.stat {
-    font-family: "Merriweather Sans", sans-serif;
-    font-weight: bold;
-    font-size: 1.2vw;
-}
-
-.stat-title {
-    font-size: 1vw;
-    font-family: "Roboto", sans-serif;
-}
-
-
-.image-card {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 50%;
-    height: 80%;
-    border-radius: 30px;
+    border-radius: 20px;
+    transition: 0.3s all ease;
+    transform: rotate(5deg) scale(0.9);
+}
+
+.context {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56, 56, 56, 0.411);
+    backdrop-filter: blur(10px);
+    transition: 0.2s all ease;
+}
+
+.card:hover {
+    transform: scale(1);
+}
+
+.context:hover {
+    opacity: 1;
+}
+
+.info-title {
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.7vw;
+    font-weight: bold;
+}
+
+.info-text {
+    margin-top: 10px;
+    font-size: 1.1vw;
+    font-family: "Roboto", sans-serif;
+}
+
+.action-button {
+    background-color: rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
+    color: white;
+    border-radius: 3px;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 8px 40px 8px 40px;
+    transition: 0.3s all ease;
+}
+
+.action-button:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    width:  100%;
+    height: 14%;
+    overflow: hidden;
+    border-radius: 10px;
+} 
+
+.stat {
+    border: 3px solid black;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    height: 100%;
+    flex-direction: column;
+    background-color: 	rgb(0, 0, 0);
+    transition: 0.3s all ease;
+}
+
+.stat:hover {
+    background-color: rgba(0, 0, 0, 0.39);
+
+}
+
+.stat-info {
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+
+.stat-header {
+    font-size: 1vw;
+}
+
+.context-text {
+
+}
+
+.card-text {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    width: 90%;
+    font-size: 20px;
 }

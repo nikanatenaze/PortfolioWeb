@@ -1,4 +1,5 @@
 .Nav {
+    z-index: 10000000;
     width: 100%;
     height: 8vh;
     position: fixed;
