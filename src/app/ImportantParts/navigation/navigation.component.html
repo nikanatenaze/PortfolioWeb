@@ -4,9 +4,10 @@
             <div class="Content">
                 <p class="title" routerLink="/">NateWeb</p>
                 <ul class="buttons">
-                    <li routerLink="/">Home</li>
-                    <li routerLink="/projects">Projects</li>
-                    <li routerLink="/about">About</li>
+                    <li routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</li>
+                    <li routerLink="/projects" routerLinkActive="active">Projects</li>
+                    <li routerLink="/about" routerLinkActive="active">About</li>
+                    <li routerLink="/contact" routerLinkActive="active">Contact</li>
                 </ul>
             </div>
         </div>

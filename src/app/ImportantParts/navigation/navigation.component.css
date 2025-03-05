@@ -4,6 +4,7 @@
     height: 8vh;
     position: fixed;
     top: 0px;
+    font-family: "Roboto", sans-serif;
 }
 
 .Nav-Label {
@@ -34,7 +35,7 @@
 
 .title {
     cursor: pointer;
-    font-size: 30px;
+    font-size: 27px;
     color: white;
 }
 
@@ -49,11 +50,15 @@
 .buttons li {
     cursor: pointer;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     transition: 0.3s all ease;
 }
 
 .buttons li:hover {
     color: gold;
+}
+
+.active {
+    color: gold !important;
 }
