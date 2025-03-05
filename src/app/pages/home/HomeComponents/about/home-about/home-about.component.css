@@ -52,14 +52,14 @@
     background-color: white;
     color: black;
     transition: 0.3s all ease;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(10px);
 }
 
 .card:hover {
     border: 3px solid white;
     color: white !important;
     transform: scale(1.1);
-    background-color: rgba(0, 0, 0, 0.582);
+    background-color: rgba(0, 0, 0, 0.26);
 }
 
 .card-img {
