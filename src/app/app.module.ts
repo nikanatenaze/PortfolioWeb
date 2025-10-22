@@ -12,7 +12,7 @@ import { ErrorComponent } from './pages/error/error.component';
 import { HomeStartComponent } from './pages/home/home-components/start/home-start/home-start.component'
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HomeAboutComponent } from './pages/home/home-components/about/home-about/home-about.component';
-import { HomeFeaturedComponent } from './pages/home/home-components/featured/home-featured/home-featured.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +25,6 @@ import { HomeFeaturedComponent } from './pages/home/home-components/featured/hom
     ErrorComponent,
     HomeStartComponent,
     HomeAboutComponent,
-    HomeFeaturedComponent
   ],
   imports: [
     BrowserModule,
