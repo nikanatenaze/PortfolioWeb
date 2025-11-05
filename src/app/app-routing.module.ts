@@ -4,13 +4,14 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ErrorComponent } from './pages/error/error.component';
+import { Title } from '@angular/platform-browser';
 
 const routes: Routes = [
-  {path: "", component: HomeComponent},
-  {path: "home", component: HomeComponent},
-  {path: "projects", component: ProjectsComponent},
-  {path: "about", component: AboutComponent},
-  {path: "**", component: ErrorComponent}
+  {path: "", component: HomeComponent, data: {title: "Home"}},
+  {path: "home", component: HomeComponent, data: {title: "Home"}},
+  {path: "projects", component: ProjectsComponent, data: {title: "Projects"}},
+  {path: "about", component: AboutComponent, data: {title: "About"}},
+  {path: "**", component: ErrorComponent, data: {title: "404"}}
 ];
 
 @NgModule({

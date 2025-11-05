@@ -1,33 +1,15 @@
-<section class="home-start">
-    <div class="content">
-        <div class="con">
-            <div class="info" (click)="logData()">
-                <div class="info-title">
-                    <p>Hello, I'm</p>
-                    <p>Nikoloz Natenadze</p>
-                </div>
-                <p class="info-text">Welcome to my portfolio! I’m a passionate web developer with experience in building modern, responsive, and user-friendly websites and applications. With a strong focus on clean design, performance, and functionality, I specialize in using Angular and other front-end technologies to create engaging digital experiences. Explore my projects to see how I blend creativity with technology to bring ideas to life.
+<section class="content">
+    <div class="content-div">
+        <div class="info">
+            <p class="title"><span>N</span>ikoloz <span>N</span>atenadze<span>.</span></p>
+            <p class="info-content">I’m a web and backend developer passionate about building fast, secure, and scalable digital solutions. I combine clean code with modern design to create seamless, high-performing web experiences.</p>
+            <div class="buttons">
+                <a class="button" target="_blank" href="https://github.com/nikanatenaze">
+                    Github <i class="fa-brands fa-github"></i>
+                </a>
+                <p class="button" routerLink="/about">
+                    About <i class="fa-solid fa-face-smile"></i>
                 </p>
-                <button class="action-button">More</button>
-            </div>
-            <div class="stats">
-                <div class="stat">
-                    <p class="stat-info">{{years}}+</p>
-                    <p class="stat-header">Experiance</p>
-                </div>
-                <div class="stat">
-                    <p class="stat-info">{{data.public_repos}}+</p>
-                    <p class="stat-header">Projects</p>
-                </div>
-                <div class="stat">
-                    <p class="stat-info">{{data.followers}}</p>
-                    <p class="stat-header">Follower</p>
-                </div>
-            </div>
-        </div>
-        <div class="card" style="background-image: url('{{data.avatar_url}}');">
-            <div class="context">
-                <p class="card-text">If you need something more specific or tailored to your project, feel free to share more details!</p>
             </div>
         </div>
     </div>
