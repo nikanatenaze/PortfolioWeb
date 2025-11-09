@@ -1,3 +1,5 @@
+/* About information styles */
+
 .home-start {
     width: 100%;
     height: 90vh;
@@ -8,11 +10,12 @@
 }
 
 .con {
+    gap: 30px;
     width: 600px;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
 }
 
@@ -72,6 +75,10 @@
     font-weight: bold;
 }
 
+.info-title span {
+    color: darkgoldenrod;
+}
+
 .info-text {
     margin-top: 10px;
     font-size: 1.1vw;
@@ -106,6 +113,7 @@
 } 
 
 .stat {
+    cursor: pointer;
     border: 3px solid black;
     color: white;
     font-family: "Roboto", sans-serif;
@@ -121,16 +129,16 @@
 
 .stat:hover {
     background-color: rgba(0, 0, 0, 0.39);
-
+    border-radius: 10px;
 }
 
 .stat-info {
-    font-size: 1.3vw;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .stat-header {
-    font-size: 1vw;
+    font-size: 20px;
 }
 
 .context-text {
@@ -143,3 +151,33 @@
     width: 90%;
     font-size: 20px;
 }
+
+@media screen and (max-width: 1080px) {
+    .info-title {
+        font-size: 30px;
+    }
+    .card {
+        display: none;
+    }
+    .info-text {
+        font-size: 2.5vw !important;
+    }
+    .stat p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .info-text {
+        font-size: 4vw !important;
+    }
+    .info-title {
+        font-size: 20px;
+    }
+    .stat p {
+        font-size: 8px;
+    }
+}
+
+/* Languages styles */
+

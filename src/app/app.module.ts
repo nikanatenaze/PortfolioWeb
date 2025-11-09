@@ -9,9 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ErrorComponent } from './pages/error/error.component';
-import { HomeStartComponent } from './pages/home/home-components/start/home-start/home-start.component'
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { HomeAboutComponent } from './pages/home/home-components/about/home-about/home-about.component';
 
 
 @NgModule({
@@ -23,8 +21,6 @@ import { HomeAboutComponent } from './pages/home/home-components/about/home-abou
     AboutComponent,
     ProjectsComponent,
     ErrorComponent,
-    HomeStartComponent,
-    HomeAboutComponent,
   ],
   imports: [
     BrowserModule,
