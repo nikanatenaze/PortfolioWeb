@@ -17,7 +17,7 @@
                     <p class="stat-header">Experiance Years</p>
                 </div>
                 <div class="stat">
-                    <p class="stat-info">{{data.public_repos}}</p>
+                    <p class="stat-info">{{data.public_repos}}+</p>
                     <p class="stat-header">Projects</p>
                 </div>
                 <div class="stat">
@@ -35,5 +35,17 @@
 </section>
 <!-- Languages section -->
 <section class="languages">
-
+    <p class="languages-title">Programing languages:</p>
+    <div class="l-cards">
+        <div class="l-card" *ngFor="let language of languages">
+            <div class="l-card-image" style="background-image: url({{language.imageUrl}});"></div>
+            <div class="l-card-content">
+                <div class="l-card-desc">
+                    <p class="desc-title">{{language.name}}</p>
+                    <p class="desc-text">Note: {{language.desc}}</p>
+                </div>
+                <button class="l-card-projects">View</button>
+            </div>
+        </div>
+    </div>
 </section>
