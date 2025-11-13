@@ -1,3 +1,15 @@
-<section class="Default-Page-Class">
-    <p style="font-size: 50px;">Project Page</p>
+<section class="projects-page">
+    <div class="content-section">
+        <p class="content-title">Github Projects:</p>
+        <div class="cards">
+            <div class="card" *ngFor="let i of Projects">
+                <div class="card-image"></div>
+                <div class="card-content">
+                    <p>{{i.name}}</p>
+                    <p class="card-info">{{i.language}} • {{i.private ? "Private" : "Public"}} • {{i.created_at | date:'dd/MM/yyyy'}}</p>
+                    <p class="card-desc">{{i.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>

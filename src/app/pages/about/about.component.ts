@@ -9,8 +9,8 @@ import { Language } from '../../classes/language';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-constructor(private service: GitHubService) {
-    console.log('Service:', this.service);
+  constructor(private service: GitHubService) {
+    
   }
 
   languages: Language[] = [
