@@ -1,11 +1,14 @@
 export class Language {
     name: string;
     desc: string;
+    level: string;
     imageUrl: string;
-    constructor(Name:string, Desc:string, ImageUrl:string) {
+    
+    constructor(Name:string, Desc:string, level: string, ImageUrl:string) {
         this.name = Name;
         this.desc = Desc;
         this.imageUrl = ImageUrl
+        this.level =level
     }
 
     getLanguageName() {
@@ -14,6 +17,10 @@ export class Language {
 
     getLanguageDescription() {
         return this.desc;
+    }
+
+    getLanguageLevel() {
+        return this.level
     }
 
     getImageUrl() {

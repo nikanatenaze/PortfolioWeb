@@ -14,13 +14,13 @@ constructor(private service: GitHubService) {
   }
 
   languages: Language[] = [
-    new Language("HTML", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione molestiae magnam dolorum deleniti vel.", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"),
-    new Language("CSS", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione molestiae magnam dolorum deleniti vel.", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/340px-CSS3_logo_and_wordmark.svg.png"),
-    new Language("Java Script", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione molestiae magnam dolorum deleniti vel.", "https://repository-images.githubusercontent.com/539560750/278d0bbf-6aaf-4f38-a18f-e328305bcd7b"),
-    new Language("Type Script", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione molestiae magnam dolorum deleniti vel.", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/1024px-Typescript.svg.png"),
-    new Language("C#", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione molestiae magnam dolorum deleniti vel.", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/C_Sharp_Logo_2023.svg/1024px-C_Sharp_Logo_2023.svg.png"),
-    new Language("SQL", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione molestiae magnam dolorum deleniti vel.", "https://codevisionz.com/wp-content/uploads/2024/04/sql-logo.png"),
-    new Language("Python", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione molestiae magnam dolorum deleniti vel.", "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"),
+    new Language("HTML", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione molestiae magnam dolorum deleniti vel.", "Immediate","https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"),
+    new Language("CSS", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione molestiae magnam dolorum deleniti vel.", "Immediate", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/340px-CSS3_logo_and_wordmark.svg.png"),
+    new Language("Java Script", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione molestiae magnam dolorum deleniti vel.", "Immediate", "https://repository-images.githubusercontent.com/539560750/278d0bbf-6aaf-4f38-a18f-e328305bcd7b"),
+    new Language("Type Script", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione molestiae magnam dolorum deleniti vel.", "Rookie","https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/1024px-Typescript.svg.png"),
+    new Language("C#", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione molestiae magnam dolorum deleniti vel.", "Immediate+","https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/C_Sharp_Logo_2023.svg/1024px-C_Sharp_Logo_2023.svg.png"),
+    new Language("SQL", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione molestiae magnam dolorum deleniti vel.", "Rookie","https://codevisionz.com/wp-content/uploads/2024/04/sql-logo.png"),
+    new Language("Python", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione molestiae magnam dolorum deleniti vel.", "Newbie","https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"),
   ]
 
   ngOnInit(): void {

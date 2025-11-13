@@ -235,7 +235,9 @@
 .l-card:hover {
     color: white !important;
     background-color: rgba(0, 0, 0, 0.212);
+    border: 3px solid white;
     transform: scale(0.95);
+    font-size: 15px;
 }
 
 .l-card-image {
@@ -258,7 +260,8 @@
 }
 
 .l-card-projects {
-    background-color: white;
+    color: white;
+    background-color: rgb(22, 22, 22);
     border-top: 1px solid gray !important;
     border: none;
     cursor: pointer;
@@ -268,7 +271,7 @@
 }
 
 .l-card-desc {
-    gap: 15px;
+    gap: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -279,9 +282,17 @@
 .desc-title {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
+    font-weight: bolder;
+}
+
+.desc-level {
+    font-weight: 500;
+    font-size: 16px;
+    font-family:  "Roboto", sans-serif;
 }
 
 .desc-text {
+    font-size: 15px;
     width: 80%;
     text-align: center;
     font-family: "Roboto", sans-serif;
