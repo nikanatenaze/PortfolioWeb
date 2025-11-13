@@ -2,14 +2,22 @@
     <div class="Nav-Label">
         <div class="Nav-Main">
             <div class="Content">
-                <p class="title" routerLink="/">N. Natenadze</p>
+                <p class="title" routerLink="/">Nikoloz Natenadze</p>
                 <ul class="buttons">
                     <li routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</li>
                     <li routerLink="/projects" routerLinkActive="active">Projects</li>
                     <li routerLink="/about" routerLinkActive="active">About</li>
                     <li routerLink="/contact" routerLinkActive="active">Contact</li>
                 </ul>
+                <i class="fa-solid fa-bars bar-button" (click)="toggleSlide()"></i>
             </div>
         </div>
     </div>
 </nav>
+
+<section class="responsive-nav" [style.transform]="toggleSlideBar">
+    <p class="responsive-nav-button" routerLink="/">Home</p>
+    <p class="responsive-nav-button" routerLink="/projects">Projects</p>
+    <p class="responsive-nav-button" routerLink="/about">About</p>
+    <p class="responsive-nav-button" routerLink="/contact">Contact</p>
+</section>

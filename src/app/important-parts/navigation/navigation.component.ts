@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './navigation.component.css'
 })
 export class NavigationComponent {
-
+  public toggleSlideBar:any = "translateY(-1500px)"
+  toggleSlide() {
+    if(this.toggleSlideBar === "translateY(-1500px)") {
+      this.toggleSlideBar = "translateY(1500px)"
+    } else {
+      this.toggleSlideBar = "translateY(-1500px)"
+    }
+    console.log('a')
+  }
 }
