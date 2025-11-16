@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { GitHubService } from '../../services/GitHub/git-hub.service';
+import { ProjectCardData } from '../../classes/project-card-data';
 
 @Component({
   selector: 'app-projects',
@@ -12,11 +13,24 @@ export class ProjectsComponent  {
     
   }
 
-  Projects: any
+  Projects: ProjectCardData[] = []
+  numer = 1
+
   ngOnInit(): void {
-    this.Projects = this.service.getRepositories().subscribe((x:any) => {
-      this.Projects = x;
-      console.log(this.Projects);
-    })
+      this.service.getRepositories().subscribe((res:any[]) => {
+        console.log(res);
+        
+      this.Projects = res.map(i => new ProjectCardData(this.SpaceMaker(i.name), i.description, i.private, i.svn_url, `https://lipsum.app/random/640x360?${Math.random()}`, i.language, i.created_at));
+    });
+  }
+
+  SpaceMaker(str:string) {
+     let st = str.split('-')
+     return st.join(" ");
+  }
+
+
+  OpenLink(link: string): void {
+    window.open(link, '_blank');  // opens in new tab
   }
 }

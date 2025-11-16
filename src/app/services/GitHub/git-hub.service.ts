@@ -9,7 +9,7 @@ export class GitHubService {
   constructor(public api: HttpClient) { }
 
   getRepositories() {
-    return this.api.get("https://api.github.com/users/nikanatenaze/repos");
+    return this.api.get<any[]>("https://api.github.com/users/nikanatenaze/repos");
   }
 
   getRepositoryByName(name:string) {

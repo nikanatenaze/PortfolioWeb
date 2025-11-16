@@ -2,12 +2,12 @@
     <div class="content-section">
         <p class="content-title">Github Projects:</p>
         <div class="cards">
-            <div class="card" *ngFor="let i of Projects">
-                <div class="card-image"></div>
+            <div class="card" *ngFor="let i of Projects" (click)="OpenLink(i.githubUrl)">
+                <div class="card-image" [style.background-image]="'url(' + i.imageUrl + ')'"></div>
                 <div class="card-content">
-                    <p>{{i.name}}</p>
-                    <p class="card-info">{{i.language}} • {{i.private ? "Private" : "Public"}} • {{i.created_at | date:'dd/MM/yyyy'}}</p>
-                    <p class="card-desc">{{i.description}}</p>
+                    <p>{{i.projectTitle}}</p>
+                    <p class="card-info">{{i.projectLanguage}} • {{i.projectAccess ? "Private" : "Public"}} • {{i.uploadDate | date:'dd/MM/yyyy'}}</p>
+                    <p class="card-desc">{{i.projectDesc}}</p>
                 </div>
             </div>
         </div>
