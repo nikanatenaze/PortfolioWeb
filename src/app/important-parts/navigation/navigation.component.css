@@ -39,7 +39,7 @@
     font-family: "Momo Trust Display", sans-serif;
     cursor: pointer;
     font-size: 23px;
-    color: white;
+    color: var(--primary);
 }
 
 .buttons {
@@ -59,7 +59,7 @@
 }
 
 .buttons li:hover {
-    color: gold;
+    color: var(--hover);
 }
 
 .bar-button {
@@ -70,7 +70,8 @@
 }
 
 .active {
-    color: gold !important;
+    color: var(--primary) !important;
+    border-bottom: 2px solid var(--primary);
 }
 
 .responsive-nav {
